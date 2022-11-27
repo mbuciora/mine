@@ -1,0 +1,7 @@
+CCFLAGS = -lncurses -pthread -lm
+
+main: main.c
+	gcc  main.c $(CCFLAGS) -o main 
+
+clean:
+	rm -rf *.o main
